@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+}
+
+header nav ul li{
+    margin-right: 20px;
+}
+
+header{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+}
+
+h1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 35px;
+    font-weight: 900;
+    font-style: normal;
+}
+
+h2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+h3{
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+footer{
+    background-color: rgb(246, 246, 246);
+}
+
+footer ul li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+footer section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+/* index */
+/* novedades */
+.bloquenov{
+    width: 500px;
+    height: 300px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.Novedades{
+    display: flex;
+    flex-direction: column;
+}
+
+.wrap{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/* galeria */
+.galeria{
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 30px;
+}
+
+/* preguntas */
+.preguntas{
+    padding: 30px;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* plataforma nacional de transparencia */
+.transparencia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    margin-bottom: 90px;
+}
+
+/* footer */
+.footer{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    font-style: normal;
+    margin-right: 15px;
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+/* pages */
+
+
+/* animales */
+.div-animales{
+    text-align: center;
+    margin: 15px;
+}
+
+/* atracciones */
+.div-atracciones{
+    text-align: center;
+    margin: 15px;
+}
+
+
+/* paquetes */
+.listapaquetes{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
