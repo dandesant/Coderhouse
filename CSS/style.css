@@ -6,27 +6,17 @@
     color: inherit;
 }
 
-header nav ul{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    padding: 10px;
-    justify-content: center;
-}
-
-header nav ul li{
-    margin-right: 20px;
-}
-
 header{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 700;
+    font-weight: 500;
     font-style: normal;
-    display: flex;
-    align-items: center;
-    margin-left: 70px;
+    backdrop-filter: blur(40px);
+}
+
+/* Bootstrap */
+.text-nav{
+    --bs-text-opacity: .8;
 }
 
 h1{
@@ -65,12 +55,38 @@ footer section{
 
 p{
     font-family: "Montserrat", sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 500;
 
 }
 
+.banner{
+    width: 100%;
+    height: auto;
+}
+
 /* index */
+.contenedor{
+    margin: 30px 70px 30px 70px;
+}
+
+.banner-index{
+    position: static;
+    top: 0;
+    left: 0;
+}
+
+/* Botones */
+.button-standard{
+    background-color: rgb(230, 97, 60);
+    color: white;
+    border: none;
+    padding: 5px 30px;
+    border-radius: 5px;
+    width: 120px;
+    font-weight: 600;
+}
+
 /* novedades */
 .bloquenov{
     width: 500px;
