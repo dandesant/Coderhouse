@@ -6,6 +6,11 @@
     color: inherit;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 header{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -40,10 +45,10 @@ h3{
 
 footer{
     background-color: rgb(246, 246, 246);
+    padding: 20px 20px 20px 20px;
 }
 
 footer ul li{
-    list-style: none;
     display: flex;
     flex-direction: column;
 }
@@ -51,6 +56,7 @@ footer ul li{
 footer section{
     display: flex;
     flex-wrap: wrap;
+    
 }
 
 p{
@@ -65,9 +71,20 @@ p{
     height: auto;
 }
 
+
 /* index */
+
+
+
 .contenedor{
-    margin: 30px 70px 30px 70px;
+    margin: 20px 50px 20px 50px;
+}
+
+.banner-img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    
 }
 
 .banner-index{
@@ -87,27 +104,59 @@ p{
     font-weight: 600;
 }
 
+.tigre{
+    width: 100%;
+    height: auto;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    align-content: center;
+    
+}
+
+
+
 /* novedades */
 .bloquenov{
-    width: 500px;
-    height: 300px;
+    width: 440px;
+    height: 250px;
     padding: 10px;
     display: flex;
     flex-direction: row;
     font-family: "Montserrat", sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 500;
     font-style: normal;
 }
 
+.bloquenov p{
+    font-size: 12px;
+}
+
+.bloquenov img{
+    width: auto;
+    height: 100%;
+}
+
+.img-nov{
+    object-fit: cover;
+    
+}
+
+
 .Novedades{
     display: flex;
     flex-direction: column;
+    margin-top: 10px;
 }
 
 .wrap{
     display: flex;
     flex-flow: row wrap;
+    width: auto;
+    justify-content: center;
 }
 
 /* galeria */
@@ -115,7 +164,9 @@ p{
     display: flex;
     flex-flow: row nowrap;
     margin-bottom: 30px;
+    height: 300px;
 }
+
 
 /* preguntas */
 .preguntas{
@@ -130,28 +181,34 @@ p{
     font-style: normal;
 }
 
+
+
+
 /* plataforma nacional de transparencia */
 .transparencia{
+    width: 500px;
+    height: auto;
     display: flex;
-    align-items: center;
     justify-content: center;
-    width: auto;
-    margin-bottom: 90px;
+    align-items: center;
+    margin-bottom: 40px;
 }
+
+.transparencia img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
 
 /* footer */
 .footer{
-    display: flex;
-    flex-direction: column;
-    width: 200px;
+    width: 250px;
     font-family: "Montserrat", sans-serif;
     font-size: 12px;
     font-weight: 600;
-    font-style: normal;
-    margin-right: 15px;
-    margin-left: 50px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    
 }
 
 
@@ -179,4 +236,129 @@ p{
     margin-left: 70px;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.grid-paquetes{
+    display: grid;
+    grid-template-columns: 20% 80%;   
+}
+
+.menu-paquetes{
+    margin-top: 70px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+
+}
+
+.selected-menu{
+    background-color: rgb(230, 97, 60);
+    width: 160px;
+    padding: 5px 40px 5px 30px;
+    border-radius: 50px;
+    color: white;
+    list-style: none;
+}
+
+.boton-paquetes{
+    background-color: rgb(230, 97, 60);
+    width: 160px;
+    padding: 5px 30px 5px 30px;
+    border-radius: 50px;
+    color: white;
+    border: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    display: none;
+}
+
+/* tablet & mobile */
+
+@media screen and (max-width: 768px){
+
+    /* index */
+    .banner-img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .banner-index{
+        height: 500px;
+        width: auto;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .contenedor{
+        margin: 20px 20px 20px 20px;
+    }
+    .div-tigre{
+        display: none;
+    }
+    .bloquenov{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .bloquenov img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .bloquenov p{
+        font-size: 13px;
+    }
+
+    .img-nov{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: 100%;
+        margin-bottom: 30px;
+
+    }
+
+    .galeria{
+        height: 300px;
+    }
+
+    .preguntas{
+        width: 100%;
+        height: 220px;
+    }
+
+    .transparencia img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        margin-right: 20px;
+    }
+
+    .transparencia{
+        width: 100%;
+        margin-left: 20px;
+        
+    }
+    .footer{
+        width: auto;
+
+    }
+
+    /* paquetes */
+
+    .menu-paquetes{
+        display: none;
+    }
+
+    .grid-paquetes{
+        grid-template-columns: 100%;
+    }
+
+    .boton-paquetes{
+        display: block;
+    }
 }
