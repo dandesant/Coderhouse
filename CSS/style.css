@@ -174,8 +174,6 @@ p{
     padding: 30px;
     width: 300px;
     height: 300px;
-    display: flex;
-    flex-direction: column;
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
     font-weight: 500;
@@ -187,8 +185,7 @@ p{
 
 /* plataforma nacional de transparencia */
 .transparencia{
-    width: 500px;
-    height: auto;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -196,8 +193,8 @@ p{
 }
 
 .transparencia img{
-    width: 100%;
-    height: 100%;
+    width: 500px;
+    height: auto;
     object-fit: cover;
 }
 
@@ -205,11 +202,18 @@ p{
 
 /* footer */
 .footer{
-    width: 250px;
+    padding-left: 30px;
     font-family: "Montserrat", sans-serif;
     font-size: 12px;
     font-weight: 600;
-    
+}
+
+.footer p{
+    width: 250px;
+}
+
+.footer ul{
+    width: auto;
 }
 
 
@@ -222,10 +226,21 @@ p{
     margin: 15px;
 }
 
+.div-animales img{
+    width: 200px;
+    height: auto;
+    padding-bottom: 10px;
+}
+
 /* atracciones */
 .div-atracciones{
     text-align: center;
     margin: 15px;
+}
+
+.div-atracciones img{
+    width: 250px;
+    margin-bottom: 10px;
 }
 
 
@@ -276,8 +291,43 @@ p{
 
 /* tablet & mobile */
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 835px){
 
+    .wrap{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+
+    .banner{
+        height: 400px;
+        object-fit: cover;
+        
+    }
+    .banner img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .footer{
+        width: 150px;
+        height: auto;
+        padding-left: 20px;
+    }
+
+    .footer p{
+        width: 120px;
+    }
+
+    .footer ul{
+        padding: 0px;
+        width: auto;
+    }
+
+    footer{
+        padding: 30px;
+    }
+    
     /* index */
     .banner-img{
         width: 100%;
@@ -287,8 +337,7 @@ p{
     .banner-index{
         height: 500px;
         width: auto;
-        display: grid;
-        grid-template-columns: 100%;
+
     }
     .contenedor{
         margin: 20px 20px 20px 20px;
@@ -329,11 +378,11 @@ p{
 
     .preguntas{
         width: 100%;
-        height: 220px;
+        height: auto;
     }
 
     .transparencia img{
-        width: 100%;
+        width: 500px;
         height: auto;
         object-fit: cover;
         margin-right: 20px;
@@ -344,11 +393,15 @@ p{
         margin-left: 20px;
         
     }
-    .footer{
-        width: auto;
+    
 
+    /* animales */
+
+    .div-animales img{
+        width: 250px;
     }
 
+   
     /* paquetes */
 
     .menu-paquetes{
@@ -361,5 +414,62 @@ p{
 
     .boton-paquetes{
         display: block;
+        margin-bottom: 20px;
     }
+
+}
+
+@media screen and (max-width: 431px){
+    
+    .wrap{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    footer ul{
+        display: none;
+    }
+
+    footer{
+        padding: 30px;
+    }
+
+    /* index */
+    .bloquenov img{
+        width: 170px;
+        height: auto;
+    }
+
+    .preguntas{
+        padding: 20px;
+        width: 180px;
+        height: auto;
+    }
+
+    .transparencia img{
+        width: 300px;
+    }
+
+    /* animales */
+    .div-animales img {
+        width: 150px;
+        height: auto;
+    }
+
+    /* atracciones */
+
+    .div-atracciones img{
+        width: 150px;
+    }
+
+    /* paquetes */
+    .listapaquetes{
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        margin-left: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
 }
