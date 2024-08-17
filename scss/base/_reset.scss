@@ -47,6 +47,11 @@ footer{
             flex-direction: column;
         }
     }
+    section{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
 }
 
 .footer{
@@ -54,21 +59,14 @@ footer{
     font-family: "Montserrat", sans-serif;
     font-size: 12px;
     font-weight: 600;
+    p{
+        width: 250px;
+    }
+    ul{
+        width: auto;
+    }
 }
 
-.footer p{
-    width: 250px;
-}
-
-.footer ul{
-    width: auto;
-}
-
-footer section{
-    display: flex;
-    flex-wrap: wrap;
-    
-}
 
 p{
     font-family: "Montserrat", sans-serif;

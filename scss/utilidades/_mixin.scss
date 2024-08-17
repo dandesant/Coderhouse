@@ -5,3 +5,9 @@
     height: 100%;
     object-fit: cover;
 }
+
+@mixin flex-col{
+    display: flex;
+    flex-direction: column;
+}
+

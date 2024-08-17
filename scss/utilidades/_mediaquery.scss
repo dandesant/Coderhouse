@@ -9,64 +9,66 @@
     .banner{
         height: 400px;
         object-fit: cover;
-        
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
-    .banner img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+    
 
     .footer{
         width: 150px;
         height: auto;
         padding-left: 20px;
-    }
-
-    .footer p{
-        width: 120px;
-    }
-
-    .footer ul{
-        padding: 0px;
-        width: auto;
+        p{
+            width: 120px;
+        }
+        ul{
+            padding: 0px;
+            width: auto;
+        }
     }
 
     footer{
         padding: 30px;
     }
     
+
     /* index */
     .banner-img{
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
+
     .banner-index{
         height: 500px;
         width: auto;
-
     }
+
     .contenedor{
         margin: 20px 20px 20px 20px;
     }
+
     .div-tigre{
         display: none;
     }
+
     .bloquenov{
         flex-direction: column;
         width: 100%;
         height: auto;
+        img{
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        p{
+            font-size: 13px;
+        }
     }
-    .bloquenov img{
-        width: 100%;
-        height: 300px;
-        object-fit: cover;
-    }
-
-    .bloquenov p{
-        font-size: 13px;
-    }
+    
 
     .img-nov{
         justify-content: center;
@@ -77,7 +79,6 @@
         display: grid;
         grid-template-columns: 100%;
         margin-bottom: 30px;
-
     }
 
     .galeria{
@@ -89,17 +90,15 @@
         height: auto;
     }
 
-    .transparencia img{
-        width: 500px;
-        height: auto;
-        object-fit: cover;
-        margin-right: 20px;
-    }
-
     .transparencia{
         width: 100%;
         margin-left: 20px;
-        
+        img{
+            width: 500px;
+            height: auto;
+            object-fit: cover;
+            margin-right: 20px;
+        }
     }
     
 
@@ -137,12 +136,11 @@
         grid-template-columns: 50% 50%;
     }
 
-    footer ul{
-        display: none;
-    }
-
     footer{
         padding: 30px;
+        ul{
+            display: none;
+        }
     }
 
     /* index */

@@ -1,4 +1,5 @@
 @import "../utilidades/variables";
+@import "../utilidades/mixin";
 
 
 // header
@@ -51,26 +52,23 @@ header{
     font-size: 13px;
     font-weight: 500;
     font-style: normal;
+        p{
+        font-size: 12px;
+        }
+        img{
+        width: auto;
+        height: 100%;
+        }
 }
 
-.bloquenov p{
-    font-size: 12px;
-}
-
-.bloquenov img{
-    width: auto;
-    height: 100%;
-}
 
 .img-nov{
     object-fit: cover;
-    
 }
 
 
 .Novedades{
-    display: flex;
-    flex-direction: column;
+    @include flex-col;
     margin-top: 10px;
 }
 
@@ -103,15 +101,13 @@ header{
 
 // plataforma nacional de transparencia */
 .transparencia{
-    
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 40px;
-}
-
-.transparencia img{
-    width: 500px;
-    height: auto;
-    object-fit: cover;
+    img{
+        width: 500px;
+        height: auto;
+        object-fit: cover;
+    }
 }

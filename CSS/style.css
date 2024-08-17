@@ -38,6 +38,10 @@ footer ul li {
   display: flex;
   flex-direction: column;
 }
+footer section {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .footer {
   padding-left: 30px;
@@ -45,18 +49,11 @@ footer ul li {
   font-size: 12px;
   font-weight: 600;
 }
-
 .footer p {
   width: 250px;
 }
-
 .footer ul {
   width: auto;
-}
-
-footer section {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 p {
@@ -130,11 +127,9 @@ header {
   font-weight: 500;
   font-style: normal;
 }
-
 .bloquenov p {
   font-size: 12px;
 }
-
 .bloquenov img {
   width: auto;
   height: 100%;
@@ -180,7 +175,6 @@ header {
   align-items: center;
   margin-bottom: 40px;
 }
-
 .transparencia img {
   width: 500px;
   height: auto;
@@ -191,7 +185,6 @@ header {
   text-align: center;
   margin: 15px;
 }
-
 .div-animales img {
   width: 200px;
   height: auto;
@@ -202,7 +195,6 @@ header {
   text-align: center;
   margin: 15px;
 }
-
 .div-atracciones img {
   width: 250px;
   margin-bottom: 10px;
@@ -325,15 +317,15 @@ header {
     width: 100%;
     height: auto;
   }
+  .transparencia {
+    width: 100%;
+    margin-left: 20px;
+  }
   .transparencia img {
     width: 500px;
     height: auto;
     object-fit: cover;
     margin-right: 20px;
-  }
-  .transparencia {
-    width: 100%;
-    margin-left: 20px;
   }
   /* animales */
   .div-animales img {
@@ -356,11 +348,11 @@ header {
     display: grid;
     grid-template-columns: 50% 50%;
   }
-  footer ul {
-    display: none;
-  }
   footer {
     padding: 30px;
+  }
+  footer ul {
+    display: none;
   }
   /* index */
   .bloquenov img {
