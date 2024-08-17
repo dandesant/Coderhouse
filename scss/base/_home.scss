@@ -1,0 +1,117 @@
+@import "../utilidades/variables";
+
+
+// header
+header{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    backdrop-filter: blur(40px);
+}
+
+// bootstrap
+.text-nav{
+    --bs-text-opacity: .8;
+}
+
+.banner-img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    
+}
+
+.banner-index{
+    position: static;
+    top: 0;
+    left: 0;
+}
+
+.tigre{
+    width: 100%;
+    height: auto;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    align-content: center;
+    
+}
+
+// novedades
+.bloquenov{
+    width: 440px;
+    height: 250px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.bloquenov p{
+    font-size: 12px;
+}
+
+.bloquenov img{
+    width: auto;
+    height: 100%;
+}
+
+.img-nov{
+    object-fit: cover;
+    
+}
+
+
+.Novedades{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.wrap{
+    display: flex;
+    flex-flow: row wrap;
+    width: auto;
+    justify-content: center;
+}
+
+
+// galeria
+.galeria{
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 30px;
+    height: 300px;
+}
+
+// preguntas
+.preguntas{
+    padding: 30px;
+    width: 300px;
+    height: 300px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+}
+
+// plataforma nacional de transparencia */
+.transparencia{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.transparencia img{
+    width: 500px;
+    height: auto;
+    object-fit: cover;
+}

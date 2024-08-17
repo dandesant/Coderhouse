@@ -1,0 +1,45 @@
+@import "../utilidades/variables";
+
+.listapaquetes{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.grid-paquetes{
+    display: grid;
+    grid-template-columns: 20% 80%;   
+}
+
+.menu-paquetes{
+    margin-top: 70px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+
+}
+
+.selected-menu{
+    background-color: $color-principal;
+    width: 160px;
+    padding: 5px 40px 5px 30px;
+    border-radius: 50px;
+    color: white;
+    list-style: none;
+}
+
+.boton-paquetes{
+    background-color: $color-principal;
+    width: 160px;
+    padding: 5px 30px 5px 30px;
+    border-radius: 50px;
+    color: white;
+    border: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    display: none;
+}

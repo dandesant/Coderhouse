@@ -1,0 +1,186 @@
+// tablet
+@media screen and (max-width: 835px){
+
+    .wrap{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+
+    .banner{
+        height: 400px;
+        object-fit: cover;
+        
+    }
+    .banner img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .footer{
+        width: 150px;
+        height: auto;
+        padding-left: 20px;
+    }
+
+    .footer p{
+        width: 120px;
+    }
+
+    .footer ul{
+        padding: 0px;
+        width: auto;
+    }
+
+    footer{
+        padding: 30px;
+    }
+    
+    /* index */
+    .banner-img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .banner-index{
+        height: 500px;
+        width: auto;
+
+    }
+    .contenedor{
+        margin: 20px 20px 20px 20px;
+    }
+    .div-tigre{
+        display: none;
+    }
+    .bloquenov{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .bloquenov img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .bloquenov p{
+        font-size: 13px;
+    }
+
+    .img-nov{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: 100%;
+        margin-bottom: 30px;
+
+    }
+
+    .galeria{
+        height: 300px;
+    }
+
+    .preguntas{
+        width: 100%;
+        height: auto;
+    }
+
+    .transparencia img{
+        width: 500px;
+        height: auto;
+        object-fit: cover;
+        margin-right: 20px;
+    }
+
+    .transparencia{
+        width: 100%;
+        margin-left: 20px;
+        
+    }
+    
+
+    /* animales */
+
+    .div-animales img{
+        width: 250px;
+    }
+
+   
+    /* paquetes */
+
+    .menu-paquetes{
+        display: none;
+    }
+
+    .grid-paquetes{
+        grid-template-columns: 100%;
+    }
+
+    .boton-paquetes{
+        display: block;
+        margin-bottom: 20px;
+    }
+
+}
+
+// 
+
+// mobile
+@media screen and (max-width: 431px){
+    
+    .wrap{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    footer ul{
+        display: none;
+    }
+
+    footer{
+        padding: 30px;
+    }
+
+    /* index */
+    .bloquenov img{
+        width: 170px;
+        height: auto;
+    }
+
+    .preguntas{
+        padding: 20px;
+        width: 180px;
+        height: auto;
+    }
+
+    .transparencia img{
+        width: 300px;
+    }
+
+    /* animales */
+    .div-animales img {
+        width: 150px;
+        height: auto;
+    }
+
+    /* atracciones */
+
+    .div-atracciones img{
+        width: 150px;
+    }
+
+    /* paquetes */
+    .listapaquetes{
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        margin-left: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+}

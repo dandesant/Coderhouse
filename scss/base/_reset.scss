@@ -1,0 +1,101 @@
+@import "../utilidades/variables";
+
+// reset
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+// titulos
+h1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 35px;
+    font-weight: 900;
+    font-style: normal;
+}
+
+h2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+h3{
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+// footer
+
+footer{
+    background-color: rgb(246, 246, 246);
+    padding: 20px 20px 50px 20px;
+    ul{
+        li{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+.footer{
+    padding-left: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.footer p{
+    width: 250px;
+}
+
+.footer ul{
+    width: auto;
+}
+
+footer section{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+
+}
+
+
+// todos
+.banner{
+    width: 100%;
+    height: auto;
+}
+
+.contenedor{
+    margin: 20px 50px 20px 50px;
+}
+
+
+// botones
+.button-standard{
+    background-color: $color-principal;
+    color: white;
+    border: none;
+    padding: 5px 30px;
+    border-radius: 5px;
+    width: 120px;
+    font-weight: 600;
+}
