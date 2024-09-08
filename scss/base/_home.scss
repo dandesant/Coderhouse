@@ -29,9 +29,11 @@ header{
     left: 0;
 }
 
+
 .tigre{
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 500px;
+    margin-left: -50px;
 }
 
 .grid{
@@ -86,6 +88,10 @@ header{
     flex-flow: row nowrap;
     margin-bottom: 30px;
     height: 300px;
+    animation: mover 15s linear infinite;
+    img{
+        margin-right: 10px;
+    }
 }
 
 // preguntas

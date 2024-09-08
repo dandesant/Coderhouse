@@ -81,6 +81,14 @@ p {
   font-weight: 600;
 }
 
+@keyframes mover {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 header {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -106,8 +114,9 @@ header {
 }
 
 .tigre {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 500px;
+  margin-left: -50px;
 }
 
 .grid {
@@ -157,6 +166,10 @@ header {
   flex-flow: row nowrap;
   margin-bottom: 30px;
   height: 300px;
+  animation: mover 15s linear infinite;
+}
+.galeria img {
+  margin-right: 10px;
 }
 
 .preguntas {
@@ -181,9 +194,19 @@ header {
   object-fit: cover;
 }
 
+@keyframes mover {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 .div-animales {
   text-align: center;
   margin: 15px;
+  background: none;
+  border: none;
 }
 .div-animales img {
   width: 200px;
@@ -191,9 +214,29 @@ header {
   padding-bottom: 10px;
 }
 
+/* animacion en hover - Grow */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
 .div-atracciones {
   text-align: center;
   margin: 15px;
+  background: none;
+  border: none;
 }
 .div-atracciones img {
   width: 250px;
@@ -215,7 +258,6 @@ header {
 }
 
 .menu-paquetes {
-  margin-top: 70px;
   font-family: "Montserrat", sans-serif;
   font-size: 19px;
   font-weight: 700;
@@ -228,6 +270,7 @@ header {
   border-radius: 50px;
   color: white;
   list-style: none;
+  margin-left: -25px;
 }
 
 .boton-paquetes {
@@ -285,7 +328,7 @@ header {
   .contenedor {
     margin: 20px 20px 20px 20px;
   }
-  .div-tigre {
+  .tigre {
     display: none;
   }
   .bloquenov {
